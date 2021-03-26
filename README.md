@@ -22,3 +22,19 @@ La principal diferencia entre v-if y v-show es que v-if renderiza el elemento en
 v-show se utiliza preferentemente si el elemento cambia frecuentemente y v-if cuando no cambia a lo largo del tiempo
 
 ![image](https://user-images.githubusercontent.com/30804734/112585877-724cfd80-8dd9-11eb-925e-6093dc9bb445.png)
+
+Renderizado de listas
+
+Se utiliza la directiva v-for para recorrer el array.
+v-for = “p in prices”
+.
+Al utilizar esta directiva se recomienda el uso de key, ya que permite identificar de manera unívoca a cada elemento. Esto permite que si la lista se reordene, modifique o actualice la lista pueda seguir identificando cual es el elemento.
+.
+Podemos llamar al indice del elemento de la lista:
+v-for="(p,i) in prices"
+
+v-for = " (p, i) …"
+p hace referencia al elemento en sí
+i al índice del elemento.
+
+![image](https://user-images.githubusercontent.com/30804734/112587595-a1b13980-8ddc-11eb-9e92-236af75afeba.png)
