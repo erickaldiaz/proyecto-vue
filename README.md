@@ -14,4 +14,7 @@ Las directivas de Vue siempre se escriben con v corta, guión y el nombre de la 
 Ejemplo: v-bind:src=“img” v-bind:alt="name"
 Así podemos definir valores dinámicos para estos atributos.
 
+![image](https://user-images.githubusercontent.com/30804734/112584531-c73b4480-8dd6-11eb-80fa-cd24bc73cebf.png)
+
+
 
