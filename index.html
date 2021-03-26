@@ -21,12 +21,9 @@
             <span v-show="changePercent === 0">🤞</span> -->
 
         </h1>
-        <ul>
-            <li v-for="(p, i) in prices" v-bind:key="p">
-            {{ i }} - {{ p }}
-            </li>
-        </ul>
-        <ul>
+            <span v-on:click="toggleShowPrices">Ver precios</span>
+
+            <ul v-show=showPrices>
             <li v-for="(p, i) in pricesWithDays" v-bind:key="p.day">
             {{ i }} - {{ p.day }} - {{ p.value }}
             </li>
