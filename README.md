@@ -50,4 +50,10 @@ Y se agrega la directiva v-on ante determinado evento en el HTML que permite dis
 ![image](https://user-images.githubusercontent.com/30804734/112662475-8115cd80-8e36-11eb-87fc-3980bcf1fc1d.png)
 
 
+Otra directiva que se puede utilizar en v-on es mouseover:
+
+![image](https://user-images.githubusercontent.com/30804734/112667855-8aa23400-8e3c-11eb-8276-ea9e571aa4e9.png)
+
+
+
 
