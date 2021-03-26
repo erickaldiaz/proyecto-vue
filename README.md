@@ -55,5 +55,9 @@ Otra directiva que se puede utilizar en v-on es mouseover:
 ![image](https://user-images.githubusercontent.com/30804734/112667855-8aa23400-8e3c-11eb-8276-ea9e571aa4e9.png)
 
 
+Se puede modificar el atributo class de una etiqueta usando la directiva v-bind: usando operador ternario( changePercent > 0 ? 'green' : 'red' ESTA OPERACIÓN TERNARIA ES LO MISMO QUE if changepercent > 0 { show: 'green' } else { show: 'red' } ) o validando con objetos.
+El uso de v-bind:class es completamente combinable con class, por lo tanto se puede tener un v-bind:class junto con una clase y no genera error.
+
+![image](https://user-images.githubusercontent.com/30804734/112672124-dc998880-8e41-11eb-99a3-80ed2f58f992.png)
 
 
