@@ -21,3 +21,4 @@ Control de flujo con directivas
 La principal diferencia entre v-if y v-show es que v-if renderiza el elemento en el DOM solo si se cumple la expresión y v-show renderiza todos los elementos en el DOM y luego utiliza la propiedad display de CSS para ocultarlo si no cumple con la expresión.
 v-show se utiliza preferentemente si el elemento cambia frecuentemente y v-if cuando no cambia a lo largo del tiempo
 
+![image](https://user-images.githubusercontent.com/30804734/112585877-724cfd80-8dd9-11eb-925e-6093dc9bb445.png)
