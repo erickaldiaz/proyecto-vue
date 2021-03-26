@@ -38,3 +38,16 @@ p hace referencia al elemento en sí
 i al índice del elemento.
 
 ![image](https://user-images.githubusercontent.com/30804734/112587595-a1b13980-8ddc-11eb-9e92-236af75afeba.png)
+
+
+
+Methods
+Es una propiedad de la instancia de Vue. Es un objeto donde se pueden definir funciones que pueden ser disparados por acciones en la vista.
+Para acceder a propiedades de otro scope se utiliza la keyword this seguido de un punto y el nombre de la propiedad.
+![image](https://user-images.githubusercontent.com/30804734/112662291-46ac3080-8e36-11eb-8f01-010883dd119b.png)
+
+Y se agrega la directiva v-on ante determinado evento en el HTML que permite disparar el método.
+![image](https://user-images.githubusercontent.com/30804734/112662475-8115cd80-8e36-11eb-87fc-3980bcf1fc1d.png)
+
+
+
