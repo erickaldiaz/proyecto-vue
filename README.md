@@ -75,4 +75,14 @@ Propiedades computadas (Computed) = propiedades que se calculan en tiempo real e
 Watcher = Funciones que por medio de un cambio de la observación de una variable se puede disparar la función. Es un disparador de código.
 ![image](https://user-images.githubusercontent.com/30804734/112711976-31251e00-8eab-11eb-84b0-ad3ef233b256.png)
 
+#Two-Way Data Binding:
+
+La directiva v-model permite linkear las cosas que puede escribir el usuario mediante un input con las propiedades que tenemos definidas en data. Es lo que permite que cada vez que se cambia la vista a través de interacciones con el usuario se actualice el código y cada vez que se actualice el código también se actualice la vista.
+en index.html
+![image](https://user-images.githubusercontent.com/30804734/112712531-00df7e80-8eaf-11eb-9597-bf6c2dab7cba.png)
+
+En app.js
+Dentro de data se agrega la propiedad value y se inicializa en 0. Y dentro de computed porque se opera con dos propiedades de data se agrega esta función para que retorne el valor de la operación.
+![image](https://user-images.githubusercontent.com/30804734/112712542-12288b00-8eaf-11eb-8965-f89730abd075.png)
+
 
