@@ -61,3 +61,10 @@ El uso de v-bind:class es completamente combinable con class, por lo tanto se pu
 ![image](https://user-images.githubusercontent.com/30804734/112672124-dc998880-8e41-11eb-99a3-80ed2f58f992.png)
 
 
+También se pueden aplicar style directamente a un elemento del DOM mediante un objeto:
+![image](https://user-images.githubusercontent.com/30804734/112709010-93beef80-8e94-11eb-8450-97011e55242d.png)
+
+en app.js
+![image](https://user-images.githubusercontent.com/30804734/112709027-a9ccb000-8e94-11eb-92f0-7c404bbfad4b.png)
+
+
