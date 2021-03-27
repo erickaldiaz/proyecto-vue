@@ -68,3 +68,11 @@ en app.js
 ![image](https://user-images.githubusercontent.com/30804734/112709027-a9ccb000-8e94-11eb-92f0-7c404bbfad4b.png)
 
 
+Propiedades computadas (Computed) = propiedades que se calculan en tiempo real en base a los valores de otras propiedades.
+![image](https://user-images.githubusercontent.com/30804734/112711990-4ac66580-8eab-11eb-8440-a925530f9c8d.png)
+
+
+Watcher = Funciones que por medio de un cambio de la observación de una variable se puede disparar la función. Es un disparador de código.
+![image](https://user-images.githubusercontent.com/30804734/112711976-31251e00-8eab-11eb-84b0-ad3ef233b256.png)
+
+
