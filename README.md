@@ -85,4 +85,21 @@ En app.js
 Dentro de data se agrega la propiedad value y se inicializa en 0. Y dentro de computed porque se opera con dos propiedades de data se agrega esta función para que retorne el valor de la operación.
 ![image](https://user-images.githubusercontent.com/30804734/112712542-12288b00-8eaf-11eb-8965-f89730abd075.png)
 
+SISTEMA DE COMPONENTES
+
+Los componentes son la segunda funcionalidad importante que tiene Vue. Se basan en las especificaciones de web components APIs. Permiten modularizar mi aplicación en diferentes pedazos de htm, javascript y Css para tener un código más legible y semántico. Es decir, cada componente puede ser utilizado a lo largo del proyecto, tiene todo lo que necesita para existir, tiene su lógica, tiene diseño y tiene estructura.
+
+Cuando se trabaja con Html y el DOM siempre tenemos una estructura de árbol, es decir, una estructura jerárquica DOM. Tenemos un componente principal (en este caso, el recuadro azul en la imagen abajo) y luego tenemos componentes hijos que representan contenedores con diferente tipo de contenido. Además, podemos tener otros componentes hijos, es decir, cada uno también tiene sus propios elementos Html.
+
+Estructura que manejamos con el dom
+![image](https://user-images.githubusercontent.com/30804734/112712808-6a13c180-8eb0-11eb-87fd-d0ef495d4fcb.png)
+
+entonces podemos decir que la estructura al ser de árbol, siempre tiene un componente principal y componentes hijos que salen de ese componente principal. Este componente principal estaba representado por lo que conocemos como el componente root, o nuestra aplicación (App, en este caso) y luego tenemos los componentes hijos, como puede ser un header , un footer y después diferente tipo de contenido que podemos tener a lo largo nuestra estructura. La idea de los componentes es llevar toda nuestra lógica a pedazos de Html reutilizables que luego vamos a escribir de manera muy sencilla y semántica dentro de nuestro elemento o dentro de nuestro componente principal.
+
+Por ejemplo, podríamos pensar un componente que tenga un header de Html, que también tenga algo así como un componente que se llame login . De igual modo otro componente que podría ser Custom y luego tener un footer. De esta forma combinamos los elementos de Html5 con nuestros propios componentes para conseguir un código semántico y además tenemos la ventaja de que dentro de otra página o dentro de otro componente, también podemos utilizar los componentes que creamos, por ejemplo, el componente Custom o el componente footer que es nativo de Html
+
+![image](https://user-images.githubusercontent.com/30804734/112712859-c971d180-8eb0-11eb-8db4-5cafa37e0b73.png)
+
+
+
 
