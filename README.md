@@ -101,5 +101,6 @@ Por ejemplo, podríamos pensar un componente que tenga un header de Html, que ta
 ![image](https://user-images.githubusercontent.com/30804734/112712859-c971d180-8eb0-11eb-8db4-5cafa37e0b73.png)
 
 
-
+Compponent
+para crear un componente se utiliza la propiedad component de Vue, la cual tiene casi los mismos metodos que la instancia de Vue donde veniamos haciendo todo, nada mas que este tiene el metodo template donde va a ir el “html” de nuestro componente 😄
 
