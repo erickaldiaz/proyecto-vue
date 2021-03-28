@@ -7,7 +7,6 @@ Vue.component('CoinDetail', {
             value:0
         }
     },
-
     methods: {
         toggleShowPrices () {
             this.showPrices = !this.showPrices
@@ -24,7 +23,6 @@ Vue.component('CoinDetail', {
             return this.value / this.coin.price
         }
     },
-
     template:`
     <div>
         <img 
@@ -59,8 +57,6 @@ Vue.component('CoinDetail', {
         </ul>
     </div>`
 })
-
-
 
 new Vue ({
     el: '#app',
