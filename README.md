@@ -140,5 +140,17 @@ Luego, en el Html , en <coin-detai> insertamos la directiva v-on: change-color=�
   Al momento de emitir un evento también podemos emitir un valor que vaya acompañando ese evento. En el argumento de la función this.$emit(‘change-color’) colocaremos el color que queremos, asi:
   
   ![image](https://user-images.githubusercontent.com/30804734/112760988-5d39bf80-8fcf-11eb-9bb9-5ba921aa36e0.png)
+  
+  Slots
+  En los componentes cuando ocupamos recibir contenido en lugar de recibir propiedades, podemos utilizar Slots que es una API de distribución de contenido que permite que un componente padre le inyecte HTML a un componente hijo.
+Para utilizar varios Slots, se debe colocar un nombre a cada slot para identificarlos:<slot name="text"></slot>
+Y para llamar al Slot en el HTML se debe encerrar el Slot dentro del tag template que es un tag de VueJS, que permite renderizar contenido sin la necesidad de utilizar un tag, el tag template en la renderización final es eliminado:
+
+
+![image](https://user-images.githubusercontent.com/30804734/112764071-692c7e00-8fdd-11eb-8dfa-fbbd2a3ac6c5.png)
+
+
+
+
 
 
