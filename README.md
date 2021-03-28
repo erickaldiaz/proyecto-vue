@@ -120,4 +120,25 @@ Cuando las propiedades tienen un elemento central común es más cómodo trabaja
 
 ![image](https://user-images.githubusercontent.com/30804734/112759776-ed293a80-8fca-11eb-9824-7454622e12cf.png)
 
+COMUNICACIÓN ENTRE COMPONENTES: EVENTOS
+
+¿Qué debemos hacer cuando un componente hijo necesita enviar información a un componente padre? Lo que debemos hacer es enviar eventos. Las propiedades del componente padre nunca deben ser actualizadas por el componente hijo. En caso de que haya que modificar una de estas propiedades, el componente hijo tiene que notificar al padre y esta notificación se hace a través de eventos. Se puede decir entonces que la comunicación de padre a hijo es con propiedades y de hijos a padres es con eventos. De esta manera mantenemos la consistencia en Vue.js.
+
+Recordemos que usamos el v-bind para modificar en tiempo real o tener un atributo dinámico en cuanto a las propiedades y vamos a usar la emisión de eventos con la directiva v-on para que el componente hijo pueda enviar información al componente padre.
+
+Tomando el código de la clase precedente, lo que vamos a hacer ahora es modificar la variable color del componente padre usando el componente hijo. El componente hijo debe emitir un evento para avisarle al componente padre.
+
+Vamos a hacerlo con la función this.$emit(‘change-color’) inserta en la función toggleShowPrices() que está en methods del componente hijo.
+
+![image](https://user-images.githubusercontent.com/30804734/112760881-f0bec080-8fce-11eb-90ab-12e8464abf17.png)
+
+Luego, en el Html , en <coin-detai> insertamos la directiva v-on: change-color=”updateColor ” (Significa: escuchar al evento change-color)
+  
+  ![image](https://user-images.githubusercontent.com/30804734/112760965-42ffe180-8fcf-11eb-97eb-2f32d168a319.png)
+  
+  Ahora, en el componente principal (el padre) se define, en este ejemplo, el comportamiento de change-color
+  Al momento de emitir un evento también podemos emitir un valor que vaya acompañando ese evento. En el argumento de la función this.$emit(‘change-color’) colocaremos el color que queremos, asi:
+  
+  ![image](https://user-images.githubusercontent.com/30804734/112760988-5d39bf80-8fcf-11eb-9bb9-5ba921aa36e0.png)
+
 
