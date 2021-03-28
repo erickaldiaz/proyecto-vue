@@ -10,6 +10,9 @@ Vue.component('CoinDetail', {
     methods: {
         toggleShowPrices () {
             this.showPrices = !this.showPrices
+
+            this.$emit('change-color', 
+            this.showPrices ? 'FF96C8' : '3D3D3D')
         }
     },
     computed: {
@@ -31,7 +34,6 @@ Vue.component('CoinDetail', {
         v-bind:src="coin.img" v-bind:alt="coin.name">
         <h1
         v-bind:class="coin.changePercent > 0 ? 'green' : 'red' ">
-            
             {{ name }} - {{ symbol }}
             <span v-if="coin.changePercent > 0">👍</span>
             <span v-else-if="coin.changePercent < 0">👎</span>
@@ -82,12 +84,12 @@ new Vue ({
             color: 'f4f4f4',
         }
     },
-
-    // methods: {
-    //     toggleShowPrices() {
-    //         this.showPrices = !this.showPrices
-
-    //         this.color = this.color.split('').reverse().join('')
-    //     }
-    // }
+    methods: {
+        upDateColor(color) {
+            this.color = color || this.color
+            .split('')
+            .reverse()
+            .join('')
+        }
+    }
 })
