@@ -101,6 +101,22 @@ Por ejemplo, podríamos pensar un componente que tenga un header de Html, que ta
 ![image](https://user-images.githubusercontent.com/30804734/112712859-c971d180-8eb0-11eb-8db4-5cafa37e0b73.png)
 
 
-Compponent
-para crear un componente se utiliza la propiedad component de Vue, la cual tiene casi los mismos metodos que la instancia de Vue donde veniamos haciendo todo, nada mas que este tiene el metodo template donde va a ir el “html” de nuestro componente 😄
+Component
+para crear un componente se utiliza la propiedad component de Vue, este tiene el metodo template donde va el “html” de nuestro componente
+
+🐪 camelCase
+🧮 PascalCase
+🐍 snake_case
+🍢 kebab-case
+
+Props
+
+En props definimos las propiedades que el componente padre le va a enviar al hijo. Los props se utilizan igual que las propiedades de data, se utilizan a través de this. El componente hijo no puede escribir o modificar los props que le mande el padre.
+El nombre del componente se escribe en Pascal Case, donde cada palabra inicia con la primera letra en mayúscula. Al momento de llamar al componente en el HTML, Vue parsea el nombre a Kebab Case, una nomenclatura con guiones lo cual permite mantener una consistencia con los tags HTML.
+Se recomienda mantener la consistencia entre los lenguajes, utilizar Pascal Case dentro de JavaScript: CoinDetail ; y Kebab Case dentro de HTML: coin-detail.
+Para pasarle las propiedades al componente se hace desde el HTML usando la directiva v-bind: v-bind:change-percent = “changePercent”. Aquí también aplica lo del Kebab Case.
+Los componentes de Vue necesitan tener un componente padre único que encierre a todos los demás.
+Cuando las propiedades tienen un elemento central común es más cómodo trabajarlas mediantes un objeto, así evitamos tener que estar pasando tantos props.
+![image](https://user-images.githubusercontent.com/30804734/112759776-ed293a80-8fca-11eb-9824-7454622e12cf.png)
+
 
