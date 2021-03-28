@@ -17,7 +17,7 @@ Vue.component('CoinDetail', {
     },
     computed: {
         title () {
-            return '${this.coin.name} - ${this.coin.symbol}'
+            return `${this.coin.name} - ${this.coin.symbol}`
         },
         convertedValue () {
             if (!this.value) {
@@ -26,28 +26,30 @@ Vue.component('CoinDetail', {
             return this.value / this.coin.price
         }
     },
-    template:`
+    template: `
     <div>
         <img 
         v-on:mouseover="toggleShowPrices" 
         v-on:mouseout="toggleShowPrices" 
         v-bind:src="coin.img" v-bind:alt="coin.name">
+        
         <h1
         v-bind:class="coin.changePercent > 0 ? 'green' : 'red' ">
-            {{ name }} - {{ symbol }}
+           {{ title }}
             <span v-if="coin.changePercent > 0">👍</span>
             <span v-else-if="coin.changePercent < 0">👎</span>
             <span v-else>🤞</span>
 
-            <!-- <span v-show="coin.changePercent > 0">👍</span>
-            <span v-show="coin.changePercent < 0">👎</span>
-            <span v-show="coin.changePercent === 0">🤞</span> -->
-            <span v-on:click="toggleShowPrices">{{ showPrices ? '🙈' : '🙉' }}</span>
+            <span v-on:click="toggleShowPrices">
+            {{ showPrices ? '🙈' : '🙉' }}</span>
         </h1>
         
         <input type="number" v-model="value">
         <span>{{ convertedValue }}</span>
-        
+
+        <slot name="text"></slot>
+        <slot name="link"></slot>
+
         <ul v-show=showPrices>
             <li
             class="uppercase"
@@ -85,7 +87,7 @@ new Vue ({
         }
     },
     methods: {
-        upDateColor(color) {
+        updateColor(color) {
             this.color = color || this.color
             .split('')
             .reverse()
