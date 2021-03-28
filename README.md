@@ -117,6 +117,7 @@ Se recomienda mantener la consistencia entre los lenguajes, utilizar Pascal Case
 Para pasarle las propiedades al componente se hace desde el HTML usando la directiva v-bind: v-bind:change-percent = “changePercent”. Aquí también aplica lo del Kebab Case.
 Los componentes de Vue necesitan tener un componente padre único que encierre a todos los demás.
 Cuando las propiedades tienen un elemento central común es más cómodo trabajarlas mediantes un objeto, así evitamos tener que estar pasando tantos props.
+
 ![image](https://user-images.githubusercontent.com/30804734/112759776-ed293a80-8fca-11eb-9824-7454622e12cf.png)
 
 
